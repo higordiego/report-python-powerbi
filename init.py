@@ -2,7 +2,7 @@
 import pymongo
 import certifi
 
-client = pymongo.MongoClient("mongodb+srv://teste:juniorgl5@ufe.wjqgv.mongodb.net/", tlsCAFile=certifi.where())
+client = pymongo.MongoClient("sua_url_aqui", tlsCAFile=certifi.where())
 db = client['test']
 
 a = db['dashboard'].find_one()
